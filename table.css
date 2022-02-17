@@ -1,0 +1,33 @@
+.form-bg-container {
+  display:block;
+  background-image:url(https://pr0.nicelocal.in/QC10ec5VlhHV5qb_0G3wyg/587x440,q85/4px-BW84_n0QJGVPszge3NRBsKw-2VcOifrJIjPYFYkOtaCZxxXQ2dwUUD8UBg3-GvyVaRdStmwhq5aIzifQ53f3pJM3Tg68QtD4xaMXEEAQOTLUTqXENQ); 
+  padding-left: 460px;
+  padding-top:150px;
+  padding-bottom:100px;
+  padding-right:430px;
+  
+}
+.form-bg-container1 {
+  display:none;
+  background-image:url(https://pr0.nicelocal.in/QC10ec5VlhHV5qb_0G3wyg/587x440,q85/4px-BW84_n0QJGVPszge3NRBsKw-2VcOifrJIjPYFYkOtaCZxxXQ2dwUUD8UBg3-GvyVaRdStmwhq5aIzifQ53f3pJM3Tg68QtD4xaMXEEAQOTLUTqXENQ); 
+  padding-left: 460px;
+  padding-top:150px;
+  padding-bottom:100px;
+  padding-right:430px;
+  
+}
+.submission {
+  display:none;
+  text-align: center;
+  padding-top:250px;
+  color:darkblue;
+
+}
+
+.submission1 {
+  display:block;
+  text-align: center;
+  padding-top:250px;
+  color:darkblue;
+
+}

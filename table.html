@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+  
+    
+    <div id="formbgcontainer" class="form-bg-container">
+      <form style="background-color:white;border-radius:12px;padding:18px;width:500px;" id="myform">
+        <div style="margin-bottom:12px">
+          <div style="display:inline-block">
+            <strong><label for="fname">First Name</label></strong>
+            <br>
+            <input type="text" id="fname" required="">
+          </div>
+          <div style="display:inline-block">
+            <strong><label for="lname">Last Name</label></strong>
+            <br>
+            <input type="text" id="lname" required="">
+          </div>
+        </div>
+        <div style="margin-bottom:12px"><strong><label style="margin-bottom:12px;" for="email">E-mail</label></strong>
+          <br>
+          <input type="email" placeholder="ex:myname@gmail.com" id="email" required="">
+        </div>
+        <div style="margin-bottom:12px"><strong><label for="num">Phone</label></strong>
+          <br>
+          <input type="number" id="num" required="">
+        </div>
+        <div style="margin-bottom:12px"><strong><label for="date">Date and Time Of Reservation</label></strong>
+          <br>
+          <input type="datetime-local" id="date" required="">
+        </div>
+        <div style="margin-bottom:12px"><strong><label for="number">No of Guests</label></strong>
+          <br>
+          <input type="number" id="number" required="">
+        </div>
+        <div>
+          <strong><label for="type">Reservation Type
+          </label></strong>
+          <br>
+          <select id="type">
+            <option value="Select">Please Select</option>
+            <option value="Dinner">Dinner</option> 
+            <option value="Birthday?Anniversary">Birthday/Anniversary</option>
+            <option value="Private">Private</option>
+            <option value="Wedding">Wedding</option>
+            <option value="Holiday">Holiday</option>
+            <option value="other">other</option>
+          </select>
+        </div>
+        <div>
+          <h1 style="font-size:14px;margin-bottom:0px">What is the best way to contact you?</h1>
+          <input type="checkbox" id="phone" name="phone" value="phone">
+          <label for="phone"> Phone</label><br>
+          <input type="checkbox" id="Email" name="Email" value="Email">
+          <label for="Email"> Email</label><br>
+          <input type="checkbox" id="Either" name="Either" value="Either">
+          <label for="Either">Either</label>
+        </div>
+        <div>
+          <h1 style="font-size:14px;margin-bottom:0px">If phone,when is the best time for a call back?</h1>
+          <input type="radio" id="mor" name="best-time" value="8-11 am">
+          <label for="mor">8-11 am</label><br>
+          <input type="radio" id="mid" name="best-time" value="12-4 pm">
+          <label for="mid">12-4 pm</label><br>
+          <input type="radio" id="eve" name="best-time" value="6-10 pm">
+          <label for="eve">6-10 pm</label>
+        </div>
+        <div>
+          <h1 style="font-size:14px;margin-bottom:0px">Anything else we should know</h1>
+          <textarea placeholder="Type here"></textarea>
+        </div>
+        <div style="text-align:center;margin-top:18px">
+          <button id="reserve-button" style="background-color: rgb(194, 101, 179);width:30%;color:white" type="submit">Reserve</button>
+        </div>
+      </form>
+    </div>
+        
+    <div id="Tqpage" class="submission">
+      <h1>Thankyou</h1>
+      <p>Your submission has been received</p>
+    </div>
+           
+        
+          
+        
+              
+                
+    <script>
+      let formmaincontainer=document.getElementById("formbgcontainer");
+      let responsepage=document.getElementById("Tqpage");
+      let Reservebutton=document.getElementById("reserve-button");
+      let Form=document.getElementById("myform");
+          
+          
+          
+          
+      Reservebutton.onclick = function() {
+        formmaincontainer.classList.add("form-bg-container1");
+        responsepage.classList.add("submission1");
+      }
+          
+          
+      Form.addEventListener("submit", function(event) {
+          event.preventDefault();
+          formmaincontainer.classList.add("form-bg-container1");
+          responsepage.classList.add("submission1");
+              
+      });
+    </script>           
+    
+</body>
+</html>
